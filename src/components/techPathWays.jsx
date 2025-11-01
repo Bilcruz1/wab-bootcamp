@@ -1,6 +1,8 @@
 import techPathIcon from '../Assets/icons/techPathIcon.svg';
 import checkIcon from '../Assets/icons/checkIcon.svg';
+import { useNavigate } from 'react-router-dom';
 export default function TechPathway() {
+	const navigate = useNavigate();
 	const tracks = [
 		{
 			icon: '💎',
@@ -15,6 +17,7 @@ export default function TechPathway() {
 			],
 			graduation:
 				'A complete portfolio showcasing app and website interfaces — plus the confidence to work as a UI/UX Designer.',
+			path: '/ui-ux',
 		},
 		{
 			icon: '💻',
@@ -30,6 +33,7 @@ export default function TechPathway() {
 			],
 			graduation:
 				'A strong portfolio of interactive web apps, ready to launch your career as a Frontend Developer or Web Engineer.',
+			path: '/frontend',
 		},
 		{
 			icon: '⚙️',
@@ -44,11 +48,15 @@ export default function TechPathway() {
 			],
 			graduation:
 				'Working backend systems and deployed APIs — ready to take on roles as a Backend Developer or Software Engineer',
+			path: '/backend',
 		},
 	];
 
 	return (
-		<div className="min-h-screen bg-[#1B1B1B] text-[#ffffff] lg:py-20 py-8 px-4">
+		<div
+			id="techpath"
+			className="min-h-screen bg-[#1B1B1B] text-[#ffffff] lg:py-20 py-8 px-4"
+		>
 			<div className="max-w-7xl mx-auto">
 				{/* Header */}
 				<div className="text-center lg:mb-16 mb-8">
@@ -116,7 +124,10 @@ export default function TechPathway() {
 							</div>
 
 							{/* Button */}
-							<button className="w-fit bg-[#313131] hover:bg-gray-600/50 text-white py-3 px-6 rounded-lg transition-all duration-300 font-medium border border-gray-600/50 hover:border-gray-500">
+							<button
+								onClick={() => navigate(track.path)} // 👈 navigate to path
+								className="w-fit bg-[#313131] hover:bg-gray-600/50 text-white py-3 px-6 rounded-lg transition-all duration-300 font-medium border border-gray-600/50 hover:border-gray-500"
+							>
 								Reserve a seat
 							</button>
 						</div>

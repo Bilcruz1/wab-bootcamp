@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import checkIcon from '../Assets/icons/checkIcon.svg';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function WhoCanJoinSection() {
 	const features = [
@@ -51,7 +52,14 @@ export default function WhoCanJoinSection() {
 					</div>
 
 					<button className="mt-8 px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-						Reserve a seat
+						<ScrollLink
+							to="techpath"
+							smooth={true}
+							duration={800}
+							offset={-10}
+						>
+							Join Bootcamp →
+						</ScrollLink>
 					</button>
 				</div>
 			</div>
