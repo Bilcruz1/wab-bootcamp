@@ -35,7 +35,7 @@ export default function HeroSection() {
 						</p>
 
 						<div className="flex gap-3 justify-center items-center">
-							<button className="bg-transparent lg:text-[16px] text-[9px] font-bold border-2 border-white lg:px-8 px-[15px] lg:py-3 py-[7px] rounded">
+							<button className="bg-transparent lg:text-[16px] text-[13px] font-bold border-2 border-white lg:px-8 px-[15px] lg:py-3 py-[7px] rounded">
 								<ScrollLink
 									to="techpath"
 									smooth={true}
@@ -50,7 +50,7 @@ export default function HeroSection() {
 								href="https://wa.me/2348162752044?text=Hello%2C%20I%20want%20to%20register%20for%20the%20bootcamp%20or%20make%20some%20enquiries.%20What%20is%20the%20process%20involved%3F"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="bg-[#313131] border-[1px] text-[#ffffff] lg:text-[16px] text-[9px] font-bold lg:px-8 px-[15px] lg:py-3 py-[7px] rounded inline-block hover:bg-[#444]"
+								className="bg-[#313131] border-[1px] text-[#ffffff] lg:text-[16px] text-[13px] font-bold lg:px-8 px-[15px] lg:py-3 py-[7px] rounded inline-block hover:bg-[#444]"
 							>
 								Chat With Us
 							</a>

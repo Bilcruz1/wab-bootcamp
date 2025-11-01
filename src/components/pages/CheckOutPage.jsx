@@ -1,9 +1,13 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function CheckoutPage() {
 	const { state } = useLocation();
 	const navigate = useNavigate();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 	const { course, level, amount } = state || {};
 
 	return (

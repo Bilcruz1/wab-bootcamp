@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check } from 'lucide-react';
 import checkIcon from '../../Assets/icons/checkIcon.svg';
@@ -6,6 +6,9 @@ import checkIcon from '../../Assets/icons/checkIcon.svg';
 export default function FrontendPage() {
 	const [activeTab, setActiveTab] = useState('beginner');
 	const navigate = useNavigate();
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [activeTab]);
 
 	const levels = {
 		beginner: {
