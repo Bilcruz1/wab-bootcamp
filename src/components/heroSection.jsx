@@ -6,11 +6,10 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
 	return (
-		<div>
+		<div className="bg-[#1B1B1B]">
 			{/* Hero Section */}
 			<div className="lg:min-h-screen bg-[url('/src/Assets/heroPage.png')] lg:pt-[100px] pt-[150px] pb-[60px] bg-cover bg-center text-white lg:flex lg:items-center lg:justify-center px-4 overflow-hidden">
 				<div className="w-full max-w-6xl text-center">
-					{/* Intro Badge */}
 					<motion.div
 						initial={{ opacity: 0, y: -30 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -28,7 +27,6 @@ export default function HeroSection() {
 						/>
 					</motion.div>
 
-					{/* Title & Description */}
 					<motion.div
 						initial={{ opacity: 0, y: 40 }}
 						animate={{ opacity: 1, y: 0 }}
@@ -59,7 +57,6 @@ export default function HeroSection() {
 							frontends, or build powerful backends.
 						</p>
 
-						{/* Buttons */}
 						<motion.div
 							initial={{ opacity: 0, y: 30 }}
 							animate={{ opacity: 1, y: 0 }}
