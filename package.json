@@ -15,7 +15,7 @@
 		"@fortawesome/free-solid-svg-icons": "^6.5.2",
 		"@fortawesome/react-fontawesome": "^0.2.2",
 		"emailjs-com": "^3.2.0",
-		"framer-motion": "^12.12.1",
+		"framer-motion": "^12.23.24",
 		"lucide-react": "^0.548.0",
 		"qr.react": "^0.0.1",
 		"react": "^18.3.1",

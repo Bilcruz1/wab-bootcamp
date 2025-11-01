@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
 		<div className="min-h-screen bg-[#1B1B1B] text-white py-16 px-4">
 			<div className="max-w-7xl mx-auto">
 				{/* Header */}
-				<div className="text-center mb-16">
+				<div className="text-center lg:mb-16 mb-4">
 					<h2 className="lg:text-[40px] text-[20px]  font-bold flex items-center justify-center gap-3">
 						<span className="text-[40px]">💡</span>
 						Why Choose Our Bootcamp?
