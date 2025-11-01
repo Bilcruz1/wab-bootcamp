@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
 	return (
-		<div className="bg-[#1B1B1B]">
+		<div className="bg-[#1B1B1B] pb-10">
 			{/* Hero Section */}
 			<div className="lg:min-h-screen bg-[url('/src/Assets/heroPage.png')] lg:pt-[100px] pt-[150px] pb-[60px] bg-cover bg-center text-white lg:flex lg:items-center lg:justify-center px-4 overflow-hidden">
 				<div className="w-full max-w-6xl text-center">
